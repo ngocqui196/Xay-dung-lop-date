@@ -8,19 +8,19 @@ let myDate = function (day, month, year) {
 
     this.getDay = function () {    //Phương thức getDay trả về thuộc tính của ngày "day" trong lớp "myDate"
         return this.day;
-    }
+    };
     this.getMonth = function () {
         return this.month;
-    }
+    };
     this.getYear = function () {
         return this.year;
-    }
+    };
     this.setDay = function (day) {
         this.day = day;
-    }
+    };
     this.setMonth = function (month) {
         this.month = month;
-    }
+    };
     this.setYear = function (year) {
         this.year = year;
     }
@@ -30,8 +30,10 @@ let day = date.getDay();  // Lấy tham số thuộc tính "day" của đối t�
 let month = date.getMonth(); //lấy tham số của thuộc tính "month" của đối tượng "date"
 let year = date.getYear();
 alert(day + '/' + month + '/' + year);
+
+
 date.setDay(95); //Sửa lại thuộc tính "day" của đối tượng của 'date'
-date.getMonth(52);
+date.setMonth(52);
 date.setYear(96);
 day = date.getDay(); // Khai bá
 month = date.getMonth();
